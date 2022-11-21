@@ -1,0 +1,438 @@
+/* Esta parte es para que no se vean los menus de movil en la version de ordenador */
+.header2, .header3 {
+    display: none;
+}
+
+
+
+
+/* --------------------------- */
+body {
+    /* Hago esto para que el body no me haga margenes raros a los lados y movidas raras */
+    padding: 0;
+    margin: 0;
+    /* background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffresh-city.co%2Fwp-content%2Fuploads%2F2020%2F04%2FBest-Iranian-Apple-From-fresh-city-1024x684.jpg&f=1&nofb=1"); */
+    background: #eee;
+}
+
+* {
+    /* Esto es para que todas las animaciones tengan un tiempo de ejecucion, pero vamos que ni os ralleis */
+    transition: .2s;
+}
+
+@font-face {
+    /* Con esto digo que cuando ponga font family letraapple me salga la letra que tengo descargada */
+    font-family: letrapple;
+    src: url(../../Tipografias/Sf-pro-display/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    /* Con esto digo que cuando ponga font family letraapple me salga la letra que tengo descargada */
+    font-family: letrapple2;
+    src: url(../../Tipografias/Sf-pro-display/SFPRODISPLAYBOLD.OTF);
+}
+
+.contenedorwide {
+    /* Con esto digo que el contenedor wide, sea flex
+    Este contenedor es el que se encarga de todo lo de la pag escritorio */
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header1 {
+    width: 100%;
+    height: 50px;
+
+    /* Este es el efecto blur */
+    backdrop-filter: saturate(200%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.72);
+
+    border-bottom: 1px solid #001219;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.contenido {
+    width: 90%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+}
+
+.logo>img {
+    height: 60%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+nav>div {
+    color: #001219;
+    font-family: letrapple;
+    font-size: 20px;
+
+}
+
+nav>div:hover {
+    color: #CA6702;
+    cursor: pointer;
+}
+
+section {
+    /* background-color: #CA6702; */
+    margin-top: 75px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+}
+
+section>div {
+    overflow: hidden;
+}
+
+section>div:nth-child(1)>div {
+    /* background: blueviolet; */
+    font-family: letrapple2;
+    font-size: 90px;
+    text-align: center;
+    background: url('https://www.xtrafondos.com/wallpapers/colores-en-patron-de-remolino-6199.jpg');
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section>div:nth-child(2) {
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 400px;
+    width: 100%;
+}
+
+
+section>div:nth-child(2)>div {
+    border-radius: 20px;
+}
+
+section>div:nth-child(2)>div:nth-child(1) {
+    background: url(../../Imagenes/apple-watch-series-6-novedades.png) #fff;
+    background-repeat: no-repeat;
+    background-size: auto 400px;
+    background-position: center;
+    width: 40%;
+    min-height: 300px;
+}
+
+section>div:nth-child(2)>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(107, 58, 180);
+    background: linear-gradient(90deg, rgba(107, 58, 180, 1) 0%, rgba(158, 12, 162, 1) 47%, rgba(196, 64, 91, 1) 100%);
+    width: 60%;
+    /* height: 100%; */
+    /* min-width: 500px; */
+}
+
+section>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    font-family: letrapple2;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+section>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+    font-family: letrapple;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+section>div:nth-child(3) {
+    /* height: 400px; */
+    background: url(../../Imagenes/logo.png) rgba(190, 149, 255, 0.288);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 200px;
+    transition: none;
+    width: 99vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+section>div:nth-child(3)>div:nth-child(1) {
+    padding: 20px 0 20px 0;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* height: 400px; */
+    gap: 30px;
+
+}
+
+section>div:nth-child(3)>div:nth-child(1)>div:nth-child(1) {
+    width: 100%;
+    font-family: letrapple2;
+    font-size: 40px;
+    color: rgb(94, 72, 128);
+}
+
+section>div:nth-child(3)>div:nth-child(1)>div:nth-child(2) {
+    background: url(../../Imagenes/home_smart__e8r2rdloyaqi_large.jpg) #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 600px;
+    height: auto;
+    min-height: 300px;
+    border-radius: 20px;
+}
+
+section>div:nth-child(3)>div:nth-child(1)>div:nth-child(3) {
+    background: url(../../Imagenes/sleep_rate__cv9tody39eqa_large.jpg) #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    width: 600px;
+    height: auto;
+    min-height: 300px;
+    border-radius: 20px;
+}
+
+section>div:nth-child(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* height: 500px; */
+    /* gap: 30px; */
+    /* flex-direction: row; */
+    /* background: palegreen; */
+}
+section>div:nth-child(4)>div:nth-child(1) {
+    width: 99vw;
+    text-align: center;
+    font-size: 40px;
+    font-family: letrapple2;
+    height: 80px;
+    text-align: center;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #001219;
+
+}
+section>div:nth-child(4)>div:nth-child(6) {
+    height: fit-content;
+    width: 99vw;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+section>div:nth-child(4)>div:nth-child(6) > div{
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 243243px;
+    background: cornflowerblue;
+    font-family: letrapple2;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+section>div:nth-child(4)>div:nth-child(6) > div:hover{
+    filter: saturate(200%);
+}
+section>div:nth-child(4)>div:nth-child(2) {
+    background: url(../../Imagenes/Modelos/1.jpg) #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+}
+
+section>div:nth-child(4)>div:nth-child(3) {
+    background: url(../../Imagenes/Modelos/2.jpg) #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+}
+
+section>div:nth-child(4)>div:nth-child(4) {
+    background: url(../../Imagenes/Modelos/3.jpg) #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+}
+
+section>div:nth-child(4)>div:nth-child(5) {
+    background: url(../../Imagenes/Modelos/4.jpg) #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+}
+
+
+section>div:nth-child(4)>div {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    float: left;
+    margin: 0 30px 30px 0;
+
+}
+
+footer {
+    margin-top: 50px;
+    background: black;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    box-sizing: border-box;
+    /* text-align: center; */
+    overflow: hidden;
+    font-family: letrapple;
+    gap: 30px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .header1 {
+        display: none;
+    }
+
+    .header2 {
+        z-index: 10;
+        width: 100%;
+        height: 50px;
+
+        position: fixed;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: saturate(200%) blur(20px);
+        background-color: rgba(255, 255, 255, 0.72);
+        border-bottom: 1px solid #001219;
+        top: 0;
+    }
+
+    .header2>img {
+        height: 60%;
+    }
+
+    .header3 {
+        z-index: 10;
+        backdrop-filter: saturate(200%) blur(20px);
+        background-color: rgba(255, 255, 255, 0.72);
+        border-top: 1px solid #001219;
+
+        position: fixed;
+
+        width: 100%;
+        line-height: 70px;
+
+        bottom: 0;
+
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-around;
+    }
+
+    .header3>div {
+
+        color: #001219;
+        font-family: letrapple;
+        font-size: 1.2em;
+    }
+
+    .header3>div:hover {
+        color: #005F73;
+        cursor: pointer;
+    }
+
+
+    section>div:nth-child(2) {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    section>div:nth-child(2)>div:nth-child(1) {
+        width: 100%;
+    }
+
+    section>div:nth-child(2)>div:nth-child(2) {
+        width: 100%;
+    }
+
+    section>div:nth-child(3)>div:nth-child(1) {
+        flex-direction: column;
+
+    }
+
+    section>div:nth-child(3)>div:nth-child(1)>div:nth-child(2) {
+        width: 100%;
+    }
+
+    section>div:nth-child(3)>div:nth-child(1)>div:nth-child(3) {
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: 70px;
+        flex-direction: column;
+    }
+
+}
